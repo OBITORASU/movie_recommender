@@ -1,5 +1,4 @@
 # Content based movie recommender system
-# Souhit Dey | CSE2019/056 | 11700119091 | Python Microproject
 # References and credits at bottom
 
 # imports
