@@ -6,7 +6,10 @@ import pandas as pd
 import numpy as np
 import time
 import sys
+import os
 import itertools
+
+
 from tqdm import tqdm
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -22,7 +25,7 @@ def combine(row):
     return row["keywords"]+" "+row["genres"]+" "+row["director"]+" "+row["cast"]
 
 # Loading CSV and doing some string operations
-df = pd.read_csv(r"D:\Python Projects\movie recommender\movie_dataset.csv")
+df = pd.read_csv(os.path.dirname(__file__)+"/dataset/movie_dataset.csv")
 df["title"] = df["title"].str.upper()
 
 # Cleaning up the data 
