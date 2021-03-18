@@ -102,6 +102,7 @@ try:
             print("Fatal error! Terminating....")
             break
 
+# Exception for keyboard interrupt 
 except KeyboardInterrupt:
     print("\nSIGTERM received terminating...")
 
