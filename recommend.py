@@ -44,6 +44,7 @@ try:
     cosine_sim = cosine_similarity(count_matrix)
     # Menu for selecting movies and getting recommendations 
     print("Starting Program.....", end = " ")
+    # Create a spinning loader
     spinner = itertools.cycle(["|", "/", "-", "\\"])
     for i in range(25):
         sys.stdout.write(next(spinner))
@@ -55,6 +56,7 @@ try:
     while True:
         usrmovie = input("\nPlease enter a movie that you like: ")
         usrmovie = usrmovie.upper()
+        # Create loading bar
         for i in tqdm(range(100), desc="Loading recommendations for you"):
             time.sleep(0.015)
         
