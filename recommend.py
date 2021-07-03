@@ -56,7 +56,7 @@ try:
     while True:
         usrmovie = input("\nPlease enter a movie that you like: ")
         usrmovie = usrmovie.upper()
-        # Create loading bar
+        # Create loading bar using tqdm
         for i in tqdm(range(100), desc="Loading recommendations for you"):
             time.sleep(0.015)
         
