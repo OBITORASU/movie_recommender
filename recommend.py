@@ -67,8 +67,8 @@ try:
             # Sorting the list in descending order
             sorted_recommendations = sorted(recommended_movies, key = lambda x:x[1], reverse = True)
             # Displaying top 25 similar movies
-            print("\nHere are the top 25 movies we recommend based on your choice: ")
-            # Counter for 25
+            print("\nHere are the top 10 movies we recommend based on your choice: ")
+            # Counter for 10
             i = 0
             for movie in sorted_recommendations:
                 if get_title(movie[0])==usrmovie:
